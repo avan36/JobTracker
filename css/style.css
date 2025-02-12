@@ -7,16 +7,19 @@ body {
     background-size: cover;
 }
 header {
-    background-color: lightblue;
+    background-color: mediumturquoise;
     position: fixed;
     left: 0;
     right: 0;
-    top: 5px;
-    height: 30px;
+    top: 0px;
+    height: 80px;
     display: flex;
     
     align-items: center;
     /*box-shadow: 0 0 25px 0 black;*/   
+}
+#headerContent {
+    padding: 20px
 }
 header * {
     display: inline;

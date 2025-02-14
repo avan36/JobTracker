@@ -6,6 +6,31 @@ body {
     font-family: sans-serif;
     background-size: cover;
 }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky;
+    top: 0;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align:  center;
+    padding: 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #111;
+}
+.active {
+    background-color: #FFFF;
+}
 header {
     background-color: mediumturquoise;
     position: fixed;
@@ -21,12 +46,19 @@ header {
 #headerContent {
     padding: 20px
 }
+.centerDiv {
+    align-items: center;
+    align-content: center;
+    padding: 20px;
+    top: 20px;
+}
 header * {
     display: inline;
 }
 h1 {
     color: black;
     text-align: center;
+    font-size: ;
 }
 p {
     font-family: Verdana;

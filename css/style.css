@@ -3,7 +3,7 @@ body {
     height: 125vh;
     margin-top: 40px;
     padding: 30px;
-    font-family: sans-serif;
+    font-family: system-ui;
     background-size: cover;
 }
 /*MARK: NAVBAR*/
@@ -15,6 +15,9 @@ ul {
     background-color: #333;
     position: -webkit-sticky;
     top: 0;
+}
+.navbarItems {
+    font-size: 22px;
 }
 li {
     float: left;
@@ -48,9 +51,7 @@ header {
 #headerContent {
     padding: 20px;
 }
-.navbarItems {
-    font-size: 22px;
-}
+
 .centerImage {
     display: block;
     text-align: center;
@@ -64,6 +65,22 @@ header {
     align-content: center;
     padding: 20px;
     
+}
+.howItWorks1 {
+    display: block;
+    background-color: bisque;
+    padding: 3px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.howItWorks2 {
+    display: block;
+    background-color: lightcyan;
+    padding: 3px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 header * {
     display: inline;

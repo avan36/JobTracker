@@ -6,6 +6,7 @@ body {
     font-family: sans-serif;
     background-size: cover;
 }
+/*MARK: NAVBAR*/
 ul {
     list-style-type: none;
     margin: 0;
@@ -31,6 +32,7 @@ li a:hover {
 .active {
     background-color: #FFFF;
 }
+/*PAGE CONTENT*/
 header {
     background-color: mediumturquoise;
     position: fixed;
@@ -44,13 +46,24 @@ header {
     /*box-shadow: 0 0 25px 0 black;*/   
 }
 #headerContent {
-    padding: 20px
+    padding: 20px;
+}
+.navbarItems {
+    font-size: 22px;
+}
+.centerImage {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 20px;
 }
 .centerDiv {
     align-items: center;
     align-content: center;
     padding: 20px;
-    top: 20px;
+    
 }
 header * {
     display: inline;

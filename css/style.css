@@ -1,6 +1,7 @@
 iframe {
     display: block;
     margin: 0 auto;
+    
 }
 body {
     background-color: white;
@@ -25,6 +26,7 @@ ul {
     align-items: center;
     gap: 20px;
     flex-wrap: nowrap;
+    
 }
 .feature {
     background: white;
@@ -55,6 +57,8 @@ ul {
     background: linear-gradient(to right, #f4f9ff, #eaf4ff);
     padding: 60px 10%;
     text-align: center;
+    border-radius: 30px;
+    margin-top: 20px;
     
 }
 .highlight {

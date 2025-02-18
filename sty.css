@@ -1,0 +1,215 @@
+/* Global Styles */
+body {
+    background-color: white;
+    margin-top: 40px;
+    padding: 30px;
+    font-family: system-ui;
+}
+
+/* How-to-use Section */
+.how-to-use {
+    width: 80%;
+    max-width: 900px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+/* Step container */
+
+
+.step {
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    min-height: 250px;
+    box-shadow: none; 
+}
+
+
+.step::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+}
+
+/* Colors per step */
+.step-1::before {
+    background-color: #FFB5B5;
+    left: 0;
+}
+.step-2::before {
+    background-color: #A0D8FF;
+    right: 0;
+}
+.step-3::before {
+    background-color: #FFFBB3;
+    left: 0;
+}
+
+.step-image,
+.step-text {
+    width: 50%;
+    z-index: 1; /* Content above background */
+    display: flex;
+    padding: 20px;
+}
+
+.step-text {
+    background-color: white;
+    text-align: left;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    box-shadow: none; /* no shadows / borders */
+    border: none;
+}
+
+
+/* Below title */
+.step-text h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* Image container */
+.step-image {
+    justify-content: center;
+    align-items: center;
+}
+
+.step-image img {
+    width: 80%;
+    max-width: 200px;
+    border-radius: 8px;
+}
+
+/* Title keywords */
+.highlight-1 {
+    color: #FFB5B5;
+}
+.highlight-2 {
+    color: #A0D8FF;
+}
+.highlight-3 {
+    color: #FFFBB3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .step {
+        flex-direction: column;
+        text-align: center;
+        min-height: auto;
+        gap: 0; 
+    }
+
+    .step::before {
+        width: 100%;
+        height: 100%;
+        opacity: 0.3; 
+    }
+
+    .step-image,
+    .step-text {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .step-text {
+        text-align: center;
+        align-items: center; 
+    }
+}
+
+
+/* Features Section Title */
+.features-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.features-title p {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #777; 
+    margin-bottom: 5px;
+}
+
+.features-title h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333; /* Dark text for emphasis */
+}
+
+
+
+
+
+/* CTA Button  */
+.cta-button {
+    display: block; 
+    width: fit-content; 
+    margin: 15px auto 0; 
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+
+/* Button color Variants */
+.highlight-1-border {
+    border-color: #FFB5B5;
+    color: #FFB5B5;
+}
+
+.highlight-2-border {
+    border-color: #A0D8FF;
+    color: #A0D8FF;
+}
+
+.highlight-3-border {
+    border-color: #FFFBB3;
+    color: #C4A000; /* Slightly darker yellow for better contrast */
+}
+
+/* Hover Effect */
+.cta-button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+}
+
+
+
+/* Subtitle Icon Styling */
+.subtitle-icon1 {
+    width: 14px; 
+    height: 14px;
+    margin-left: 2px; /* spacing between text and icon */
+    vertical-align: 2px; /* move up and down */
+}
+.subtitle-icon2 {
+    width: 14px; 
+    height: 14px;
+    margin-left: 4px;
+    vertical-align: 2px;
+}
+.subtitle-icon3 {
+    width: 14px; 
+    height: 14px;
+    margin-left: 1.7px;
+    vertical-align: 3.6px;
+}

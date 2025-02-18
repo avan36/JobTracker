@@ -6,17 +6,28 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <header>
-            <h1 id = "headerContent" class = "title">Job tracker</h1>
-            <nav class = "navbarItems"> 
-                <ul>
-                    <li><a href = "">Home</a></li>
-                    <li><a href = "">Sign Up</a></li>
-                    <li><a href = "">About</a></li>
-                </ul>
+        <nav class="navbar"> 
+            <div class="logo">CareerPilot.ai</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Instructions</a></li>
+                <li><a href="#">Contact</a></li>
+                </li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+        </nav>
+    
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Never Lose Track of Your Job Applications Again</h1>
+                <p>Simply forward job-related emails, and we will organize, track, and update your job search automatically.</p>
+                <button id="cta-button">Get Started for Free</button>
             </div>
-            </nav>
-        </header>
+            <div class="hero-image">
+                <img width= "500px" src="hero_image.svg" alt="Job Tracking Dashboard">
+            </div>
+        </section>
         <div class = "section2">
             <h1>Why use <span class = "highlight">CareerPilot</span>?</h1>
             <div class = "features-container">
@@ -35,14 +46,19 @@
             </div>
             <button class = "join_button" type = "button">Save time in your career search</button>
         </div>
+        <div>
+            <iframe src="snow.html" width="100%" height="1500px" style="border: none;" scrolling="no"></iframe>
+        </div>
+        <!--
         <h1>Easily organize your job searching</h1>
         <p>With our platform, you forward any email related to your job search, we'll scan it and give you an organized overview of where you are in the process of applying to each one of your jobs.</p>
-        <!--<iframe src="WhyUseCareerPilot.html" width="100%" height="100%" style="border: none;" scrolling="no"></iframe> -->
+        <iframe src="WhyUseCareerPilot.html" width="100%" height="100%" style="border: none;" scrolling="no"></iframe>
         <div class = "howItWorks2">
         <h3>2. You forward that email to our private server</h3>
         </div>
         <h3>3. We scan the email and update your job tracking list to reflect where you are in the application process</h3>
         <h3>4. We delete the email you forwarded to us</h3>
         <p>We have a privacy promise where we do not keep any of the emails you send us. We only use them to extract relevant information related to your job search to show you. You can delete any data at any time, and we do not sell it.</p>
+        -->
     </body>
 </html>

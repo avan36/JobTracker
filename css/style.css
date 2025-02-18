@@ -3,6 +3,11 @@ iframe {
     margin: 0 auto;
     
 }
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #0073e6;
+}
 body {
     background-color: white;
     height: 125vh;
@@ -16,7 +21,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: rgb(248, 248, 248);
     position: -webkit-sticky;
     top: 0;
 }
@@ -25,7 +30,7 @@ ul {
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     
 }
 .feature {
@@ -38,11 +43,38 @@ ul {
     max-width: 30%;
     text-align: center;
 }
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.hero-content {
+    max-width: 500px;
+    text-align: left;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
 .feature img {
     width: 100%;
     border-radius: 10px;
     margin-bottom: 15px;
-    height: 200px;
+    height: auto;
+    object-fit: cover;
 }
 .feature h3 {
     font-size: 20px;
@@ -82,9 +114,113 @@ ul {
 .join_button:hover {
     background-color: #1E5FD0;
 }
+
 .navbarItems {
     font-size: 22px;
+    
 }
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end; 
+    
+    gap: 20px;
+}
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+    
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #000000;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #0073e6;
+}
+.nav-links a:hover {
+    color: #0073e6;
+}
+
+/* Get Started Button */
+.nav-btn {
+    background-color: #0073e6;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-btn:hover {
+    background-color: #0073e6;
+}
+
+
+.hamburger {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-active {
+        display: flex;
+    }
+}
+
+#cta-button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #0073e6;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+#cta-button:hover {
+    background-color: #0073e6;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+}
+
 li {
     float: left;
 }
@@ -96,12 +232,13 @@ li a {
     text-decoration: none;
 }
 li a:hover {
-    background-color: #111;
+    color: white;
+    background-color: #0073e6;
+    
 }
 .active {
     background-color: #FFFF;
 }
-/*PAGE CONTENT*/
 header {
     background-color: mediumturquoise;
     position: fixed;
@@ -112,7 +249,6 @@ header {
     display: flex;
     
     align-items: center;
-    /*box-shadow: 0 0 25px 0 black;*/   
 }
 #headerContent {
     padding: 20px;
@@ -153,7 +289,7 @@ header * {
 }
 h1 {
     color: black;
-    text-align: center;
+    text-align: left;
     font-size: ;
 }
 p {

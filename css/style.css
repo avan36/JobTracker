@@ -112,9 +112,9 @@ p {
     background-color: #ffffff;
     text-align: center;
 .hero-image {
-    width: 90%;
-    max-height: 600px;
-    padding-bottom: 200px;
+    width: 97%;
+    max-height: 400px;
+    margin-bottom: 1px;
 }
 }
 .hero-content {

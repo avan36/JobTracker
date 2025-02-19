@@ -4,6 +4,7 @@
     <head>
         <title>Job tracker</title>
         <link rel="stylesheet" href="css/style.css">
+        <meta charset="UTF-8">
     </head>
     <body>
         <nav class="navbar"> 
@@ -24,19 +25,19 @@
                 <p>Simply forward job-related emails, and we will organize, track, and update your job search automatically.</p>
                 <button id="cta-button">Get Started for Free</button>
             </div>
-            <div class="hero-image">
-                <img width= "1200px" src="hero_image_2.svg" alt="Job Tracking Dashboard">
+            <div >
+                <img class="hero-image" src="hero_image_2.svg" alt="Job Tracking Dashboard">
             </div>
         </section>
         <div class = "section2">
             <h1>Why use <span class = "highlight">CareerPilot</span>?</h1>
             <div class = "features-container">
                 <div class = "feature">
-                    <img src = "https://github.com/avan36/openImagesJobTracker/blob/main/emailSending.png?raw=true" alt = "">
+                    <img src = "feature1EmailSending.png" alt = "">
                     <h3>Only forward your job updates to track them</h3>
                 </div>
                 <div class = "feature">
-                    <img src = "https://github.com/avan36/openImagesJobTracker/blob/main/Feature2EmailSending.png?raw=true" alt = "">
+                    <img src = "feature2EmailSending.png" alt = "">
                     <h3>Easily track how your jobs are doing in your database</h3>
                 </div>
                 <div class = "feature">
@@ -47,18 +48,64 @@
             <button class = "join_button" type = "button">Save time in your career search</button>
         </div>
         <div>
-            <iframe src="snow.html" width="100%" height="1500px" style="border: none;" scrolling="no"></iframe>
+            <section class="how-to-use">
+
+                <div class="features-title">
+                    <p>FEATURES</p>
+                    <h1>Track Every Step of Your Job Search with Ease</h1>
+                </div>
+        
+                <!-- Step 1 -->
+                <div class="step step-1">
+                    <div class="step-image">
+                        <img id = "forwardImage" src="instructionsImage.svg" alt="Forward Job Emails">
+                    </div>
+                    <div class="step-text">
+                        <h2> <span class="highlight-1">Forward</span> Your Job-Related Emails 
+                            <img src="iconmonstr-email-9.svg" class="subtitle-icon1" alt="Email Icon">
+                        </h2>
+                        <p>📧 Send any job-related emails to us: applications, interview invites, or rejections. Our secure system scans key details like <strong>job ID, company name, and job title</strong> automatically.</p>
+                        <a href="https://your-signup-link.com" class="cta-button highlight-1-border">Start Forwarding</a>
+                    </div>
+                </div>
+        
+                <!-- Step 2 -->
+                
+        
+                <div class="step step-2">
+                    
+                    <div class="step-text">
+                        <h2> Track Everything for <span class="highlight-2">You</span>
+                            <img src="iconmonstr-delivery-17.svg" class="subtitle-icon2" alt="Tracking Icon">
+                        </h2>
+                        <p>📊 Every time you forward an update, your personalized tracker updates in real-time, giving you a <strong>clear view of where you stand</strong> in the hiring process.</p>
+                        <a href="https://your-signup-link.com" class="cta-button highlight-2-border">View My Tracker</a>
+        
+                    </div>
+                    <div class="step-image">
+                        <img id = "forwardImage" src="trackImage.svg" alt="Email Icon">
+                    </div>
+                </div>
+        
+                <!-- Step 3 -->
+                <div class="step step-3">
+                    <div class="step-image">
+                        <img src="analyzeImage.svg" alt="Gain Insights">
+                    </div>
+                    <div class="step-text">
+                        <h2>Analyze & <span class="highlight-3-border">Improve</span>
+                            <img src="iconmonstr-light-bulb-18.svg" class="subtitle-icon3" alt="Light Bulb Icon">
+                        </h2>
+                        <p>📈 Over time, get valuable insights. See how you compare to other applicants, track your progress, and even get <strong>AI-powered resume tips</strong> based on successful applications similar to yours.</p>
+                        
+                        <a href="https://your-signup-link.com" class="cta-button highlight-3-border">Get Insights</a>
+        
+                    </div>
+                </div>
+                
+            </section>
+            <!--<iframe id="jobTrackerIframe" src="snow.html" width="100%" style="border: none;"></iframe> -->
         </div>
-        <!--
-        <h1>Easily organize your job searching</h1>
-        <p>With our platform, you forward any email related to your job search, we'll scan it and give you an organized overview of where you are in the process of applying to each one of your jobs.</p>
-        <iframe src="WhyUseCareerPilot.html" width="100%" height="100%" style="border: none;" scrolling="no"></iframe>
-        <div class = "howItWorks2">
-        <h3>2. You forward that email to our private server</h3>
-        </div>
-        <h3>3. We scan the email and update your job tracking list to reflect where you are in the application process</h3>
-        <h3>4. We delete the email you forwarded to us</h3>
-        <p>We have a privacy promise where we do not keep any of the emails you send us. We only use them to extract relevant information related to your job search to show you. You can delete any data at any time, and we do not sell it.</p>
-        -->
+        
     </body>
 </html>

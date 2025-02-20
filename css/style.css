@@ -155,7 +155,8 @@ p {
 
 #cta-button {
     padding: 12px 20px;
-    font-size: 1rem;
+    font-weight: bold;
+    font-size: 16px;
     color: white;
     background-color: #0073e6;
     border: none;
@@ -235,6 +236,7 @@ p {
     background-color: #2979FF;
     color: white;
     font-weight: bold;
+        font-weight: bold;
     font-size: 16px;
     border: none;
     padding: 12px 24px;
@@ -398,7 +400,6 @@ iframe {
 }
 
 
-/* Features Section Title */
 .features-title {
     text-align: center;
     margin-bottom: 40px;
@@ -416,15 +417,15 @@ iframe {
 .features-title h1 {
     font-size: 32px;
     font-weight: bold;
-    color: #333; /* Dark text for emphasis */
+    color: #333; 
 }
 
 
 
 
 
-/* CTA Button  */
-.cta-button {
+button.cta-button {
+    all: unset;
     display: block; 
     width: fit-content; 
     margin: 15px auto 0; 
@@ -433,33 +434,43 @@ iframe {
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    border: 2px solid;
     border-radius: 8px;
+    cursor: pointer;
     transition: all 0.3s ease;
+    border: 2px solid;
+    background-color: #0073e6;
+    color: white;
 }
 
 
-/* Button color Variants */
-.highlight-1-border {
-    border-color: #FFB5B5;
-    color: #FFB5B5;
-}
+/* hover effect */
 
-.highlight-2-border {
-    border-color: #A0D8FF;
-    color: #A0D8FF;
-}
 
-.highlight-3-border {
-    border-color: #FFFBB3;
-    color: #C4A000; /* Slightly darker yellow for better contrast */
-}
-
-/* Hover Effect */
-.cta-button:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+button.cta-button:hover {
     transform: scale(1.05);
 }
+
+.highlight-1-border:hover {
+    background-color: #FF9A9A;
+    border-color: #FF9A9A;
+    color: black;
+}
+
+
+.highlight-2-border:hover {
+    background-color: #A0D8FF;
+    border-color: #A0D8FF;
+    color: black
+}
+
+.highlight-3-border:hover {
+    background-color: #FFFBB3;
+    border-color: #FFFBB3;
+    color: black 
+}
+
+
+
 
 
 

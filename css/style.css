@@ -1,4 +1,8 @@
-/* General Fixes */
+html {
+    scroll-padding-top: 62px;/*approx value for our navbar height --> removing website content overlap with navbar*/
+    scroll-behavior: smooth; 
+}
+
 body {
     background-color: white;
     height: 125vh;
@@ -369,7 +373,7 @@ iframe {
     color: #A0D8FF;
 }
 .highlight-3 {
-    color: #FFFBB3;
+    color: #C4A000;
 }
 
 /* Responsive Design */

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration - CareerPilot</title>
+    <link rel="icon" type="image/png" href="favicon_io/mail_favicon.ico"> <!-- feel free to replace -- can change to logo later -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar"> 
+        <a href="index.html" class="logo">CareerPilot.ai</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#features">Features</a></li>
+            <li><a href="index.html#instructions">Instructions</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </nav>
+
+    <section class="register-container">
+        <h1>Create an Account</h1>
+        <form class="register-form">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Enter your username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+
+            <button type="submit" class="cta-button">Submit</button>
+        </form>
+    </section>
+    <div id="popup-box" class="popup-box">
+        <div class="popup-content">
+            <h2>✅ Account Created!</h2>
+            <p>Thanks for creating your account! CareerPilot will launch soon, so stay tuned.</p>
+            <button class="close-popup">Close</button>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector(".register-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // no page refresh
+            document.getElementById("popup-box").style.display="flex"; 
+        });
+        
+//closing
+        document.querySelector(".close-popup").addEventListener("click",function() {
+            document.getElementById("popup-box").style.display = "none";
+        });
+        </script>
+        
+</body>
+</html>

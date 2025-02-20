@@ -27,13 +27,19 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f8f8f8;
+    /*background-color: #f8f8f8;*/
+    
     padding: 15px 0px;
     width: 100%;
     position:fixed;
     top: 0;
     left: 0;
     z-index: 1000;
+
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
+    
 }
 
 .logo {

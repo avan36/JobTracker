@@ -181,7 +181,7 @@ p {
 
 .falling {
     animation: fallIn 1s ease-out forwards;
-    opacity: 0; /* Start invisible to avoid flashes */
+    opacity: 0; 
 }
 
 /* Features Section */

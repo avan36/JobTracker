@@ -108,13 +108,13 @@
         </div>
     <script>
             document.addEventListener("DOMContentLoaded", function () {
-        /*const elements = document.querySelectorAll(".hero-content, .hero-image");*/
+
         const elements = document.querySelectorAll(".hero-content, .hero-image, .feature, .step");
         
         elements.forEach((element, index) => {
             setTimeout(() => {
                 element.classList.add("falling");
-            }, index * 150); // Stagger effect
+            }, index * 150);
         });
     });
     </script>

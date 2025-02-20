@@ -47,6 +47,11 @@ p {
     font-weight: bold;
     color: #0073e6;
     padding-left: 10px;
+    text-decoration: none;
+}
+
+.logo:hover {
+    color: #005bb5;
 }
 
 .nav-links {

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact CareerPilot</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/contact.css">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="logo">CareerPilot.ai</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="benefits.html">Benefits</a></li>
+                <li><a href="index.html#instructions">Instructions</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+        </nav>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <h1>Get in Touch</h1>
+                <p>Have questions about CareerPilot? We're here to help!</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <span class="icon">📍</span>
+                        <p>123 Tech Street, San Francisco, CA</p>
+                    </div>
+                    <div class="contact-item">
+                        <span class="icon">📧</span>
+                        <p>hello@careerpilot.ai</p>
+                    </div>
+                    <div class="contact-item">
+                        <span class="icon">📱</span>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                </div>
+            </div>
+
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" required>
+                    <label for="name">Your Name</label>
+                    <span class="focus-border"></span>
+                </div>
+
+                <div class="form-group">
+                    <input type="email" id="email" required>
+                    <label for="email">Email Address</label>
+                    <span class="focus-border"></span>
+                </div>
+
+                <div class="form-group">
+                    <select id="subject" required>
+                        <option value="" disabled selected>Select Subject</option>
+                        <option value="general">General Inquiry</option>
+                        <option value="support">Technical Support</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="business">Business Partnership</option>
+                    </select>
+                    <span class="focus-border"></span>
+                </div>
+
+                <div class="form-group">
+                    <textarea id="message" required></textarea>
+                    <label for="message">Your Message</label>
+                    <span class="focus-border"></span>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+
+        <div id="successMessage" class="message-popup">
+            <div class="popup-content">
+                <span class="close-popup">&times;</span>
+                <h2>Message Sent! 🎉</h2>
+                <p>We'll get back to you soon.</p>
+            </div>
+        </div>
+
+        <script src="js/contact.js"></script>
+    </body>
+</html>

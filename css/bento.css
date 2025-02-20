@@ -1,0 +1,83 @@
+.bento-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 100px 20px 20px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bento-box {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 24px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bento-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.large {
+    grid-column: span 2;
+    background: linear-gradient(135deg, #A0D8FF, #FFB5B5);
+    color: white;
+}
+
+.large-vertical {
+    grid-row: span 2;
+    background: linear-gradient(135deg, #FFFBB3, #A0D8FF);
+}
+
+.bento-box h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.large h2, .large-vertical h2 {
+    color: white;
+}
+
+.bento-box p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+    margin: 0;
+}
+
+.large p, .large-vertical p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.icon {
+    font-size: 32px;
+    margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+    .bento-container {
+        grid-template-columns: 1fr;
+        padding: 80px 15px 15px 15px;
+    }
+
+    .large {
+        grid-column: auto;
+    }
+
+    .large-vertical {
+        grid-row: auto;
+    }
+
+    .bento-box {
+        min-height: 150px;
+    }
+} 
